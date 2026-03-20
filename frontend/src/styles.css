@@ -1,0 +1,378 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+    'Segoe UI', sans-serif;
+  background: #111;
+  color: #f5f5f5;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-main {
+  padding: 1.5rem 4vw 3rem;
+}
+
+.mono-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 4vw;
+  background: rgba(10, 10, 10, 0.95);
+  border-bottom: 1px solid #333;
+  backdrop-filter: blur(18px);
+}
+
+.mono-nav-left,
+.mono-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mono-logo {
+  border: 1px solid #555;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: #111;
+  color: #f5f5f5;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.mono-nav-link {
+  background: transparent;
+  border: none;
+  color: #e0e0e0;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.mono-nav-link:hover {
+  background: #1f1f1f;
+}
+
+.mono-nav-genre {
+  position: relative;
+}
+
+.mono-dropdown {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  min-width: 10rem;
+  background: #111;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+  padding: 0.35rem;
+}
+
+.mono-dropdown button {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #f5f5f5;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.35rem;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.mono-dropdown button:hover {
+  background: #1f1f1f;
+}
+
+.mono-search input {
+  background: #111;
+  border-radius: 999px;
+  border: 1px solid #333;
+  padding: 0.35rem 0.75rem;
+  color: #f5f5f5;
+  min-width: 180px;
+}
+
+.mono-search input:focus {
+  outline: none;
+  border-color: #999;
+}
+
+.mono-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid #555;
+  background: #0b0b0b;
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.mono-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.mono-card {
+  background: radial-gradient(circle at top left, #181818, #0d0d0d);
+  border-radius: 1rem;
+  border: 1px solid #2a2a2a;
+  padding: 1.1rem;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.7);
+}
+
+.mono-auth-container {
+  width: 100%;
+  max-width: 480px;
+}
+
+.mono-auth-card {
+  padding: 2rem;
+}
+
+.mono-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mono-subtitle {
+  margin: 0 0 1.5rem;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+.mono-toggle {
+  display: flex;
+  border-radius: 999px;
+  padding: 0.15rem;
+  border: 1px solid #333;
+  gap: 0.15rem;
+  margin-bottom: 1.25rem;
+}
+
+.mono-toggle button {
+  flex: 1;
+  border-radius: 999px;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  background: transparent;
+  color: #ccc;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.mono-toggle button.active {
+  background: #f5f5f5;
+  color: #111;
+}
+
+.mono-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mono-form.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 0.75rem;
+}
+
+.mono-form.grid label.full,
+.mono-form.grid .full {
+  grid-column: 1 / -1;
+}
+
+.mono-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+.mono-form input,
+.mono-form textarea {
+  border-radius: 0.6rem;
+  border: 1px solid #333;
+  padding: 0.45rem 0.6rem;
+  background: #050505;
+  color: #f5f5f5;
+  resize: vertical;
+  min-height: 2.25rem;
+}
+
+.mono-form input:focus,
+.mono-form textarea:focus {
+  outline: none;
+  border-color: #999;
+}
+
+.mono-button {
+  border-radius: 999px;
+  border: 1px solid #555;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.mono-button.primary {
+  background: #f5f5f5;
+  color: #111;
+}
+
+.mono-button.secondary {
+  background: #181818;
+  color: #f5f5f5;
+}
+
+.mono-button.small {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.7rem;
+}
+
+.mono-button.full {
+  width: 100%;
+}
+
+.mono-auth-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+.mono-auth-switch .link {
+  border: none;
+  background: transparent;
+  color: #f5f5f5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mono-note {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #909090;
+}
+
+.mono-book-card {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 0.9rem;
+}
+
+.mono-book-cover img,
+.mono-cover-placeholder {
+  width: 100%;
+  height: 130px;
+  border-radius: 0.6rem;
+  object-fit: cover;
+  background: #1a1a1a;
+}
+
+.mono-cover-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #555;
+}
+
+.mono-book-body h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.mono-book-meta {
+  margin: 0 0 0.25rem;
+  font-size: 0.8rem;
+  color: #8a8a8a;
+}
+
+.mono-book-desc {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  color: #c4c4c4;
+  max-height: 3.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mono-book-price {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  color: #f5f5f5;
+}
+
+.mono-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #808080;
+}
+
+.mono-section-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.mono-profile,
+.mono-admin {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .mono-nav {
+    padding-inline: 1rem;
+  }
+
+  .app-main {
+    padding-inline: 1rem;
+  }
+
+  .mono-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mono-book-card {
+    grid-template-columns: 80px minmax(0, 1fr);
+  }
+}
+
