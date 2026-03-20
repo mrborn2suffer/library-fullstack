@@ -1,0 +1,14 @@
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/LibraryApplication.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/config/DataInitializer.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/config/SecurityConfig.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/controller/AdminController.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/controller/AuthController.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/controller/BookController.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/controller/UserController.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/dto/AuthDtos.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/model/Book.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/model/Role.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/model/User.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/repository/BookRepository.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/repository/UserRepository.java
+/home/Vaibhav/Projects/library/backend/src/main/java/com/example/library/service/CustomUserDetailsService.java
