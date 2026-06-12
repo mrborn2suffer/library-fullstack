@@ -123,3 +123,15 @@ The API is protected with **JWT (Bearer Tokens)**. Obtain your token through the
 * `POST /api/admin/books` - Add a new book (Admin only).
 * `DELETE /api/admin/books/{id}` - Delete a book (Admin only).
 * `GET /api/admin/users` - List all registered library members (Admin only).
+
+---
+
+## 🛠️ Troubleshooting
+
+### Frontend Server Fails to Start (npm command not found)
+If the frontend fails to run because `npm` is not in your environment's `PATH` but Node.js is installed, you can enable local user shims by running:
+```bash
+corepack enable npm --install-directory ~/.local/bin
+```
+Make sure `~/.local/bin` is in your shell's `PATH`.
+
