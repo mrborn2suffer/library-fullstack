@@ -89,13 +89,13 @@ GET /api/admin/users
 
 ## Screenshots
 
-### Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
 ### Login Page
 
-![Login](screenshots/login.png)
+![Login](https://github.com/user-attachments/assets/2f37ba95-c89d-435b-8d91-443093254ea4)
+
+### Dashboard
+
+![Dashboard](https://github.com/user-attachments/assets/63e72298-f73d-4676-9566-cfc202682156)
 
 ## Notes
 
